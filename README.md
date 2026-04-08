@@ -35,6 +35,8 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
+![datadashboard-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/c5965423-da81-43a7-bd6e-6713a25f8920)
+
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with imgur  
 <!-- Recommended tools:
