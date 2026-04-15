@@ -25,7 +25,8 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img width="800" height="450" alt="recipedatapt2-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/3505767a-be7c-419d-93b2-8db43e5f9002" />
+
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with Imgur  
