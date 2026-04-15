@@ -4,7 +4,7 @@ Submitted by: **Tyler Trinh**
 
 This web app: **gives a list of recipes and additional data such as price per serving. Explore new recipes!**
 
-Time spent: **4** hours spent in total
+Time spent: **8** hours spent in total
 
 ## Required Features
 
