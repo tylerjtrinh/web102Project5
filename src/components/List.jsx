@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom'
 import "./List.css";
 
 function healthColor(score) {
@@ -122,7 +123,7 @@ export default function List({ recipes = [], cuisines = [], diets = [], onRowCli
                     </td>
                     <td>
                       {/* recipe.title + recipe.id */}
-                      <div className="rl-recipe-name">{r.title}</div>
+                      <Link to={`/recipe/${r.id}`} className="rl-recipe-name">{r.title}</Link>
                       <div className="rl-recipe-id">id: {r.id}</div>
                     </td>
                     <td>

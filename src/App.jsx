@@ -1,8 +1,12 @@
 import { useState, useEffect } from 'react'
 import './App.css'
+import {Routes, Route} from 'react-router-dom'
+
+import DetailPage from './pages/DetailPage'
 import Navbar from './components/Navbar'
 import Card from './components/Card'
 import List from './components/List'
+import Charts from './components/Charts'
 const API_KEY = import.meta.env.VITE_APP_ACCESS_KEY
 
 function App() {
@@ -21,7 +25,7 @@ function App() {
     const fetchRecipes = async () => {
       const params = new URLSearchParams({
         apiKey: API_KEY,
-        number: 10,
+        number: 15,
         addRecipeInformation: true,
       })
 
@@ -49,10 +53,16 @@ function App() {
   return (
     <div className="app-layout">
       <Navbar activeNav={activeNav} onNavChange={setActiveNav} />
-      <main className="app-main">
-        <Card recipe={recipes[0]} />
-        <List recipes={recipes} cuisines={cuisines} diets={diets} />
-      </main>
+      <Routes>
+        <Route path="/" element={
+          <main className="app-main">
+            <Card recipe={recipes[0]} />
+            <Charts recipes={recipes} /> 
+            <List recipes={recipes} cuisines={cuisines} diets={diets} />
+          </main>
+        } />
+        <Route path="/recipe/:id" element={<DetailPage />} />
+      </Routes>
     </div>
   )
 }

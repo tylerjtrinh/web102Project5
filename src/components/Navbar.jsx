@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import { Link } from 'react-router-dom'
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Navbar Component
@@ -26,7 +27,7 @@ export default function Navbar({ activeNav = "Browse", onNavChange = () => {} })
         <div className="navbar-brand">
           <span className="navbar-brand-icon">🥘</span>
           <div>
-            <div className="navbar-brand-name">Recipe<br />Dashboard</div>
+            <Link to={'/'} className="navbar-brand-name">Recipe<br />Dashboard</Link>
           </div>
         </div>
 
